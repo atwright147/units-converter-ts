@@ -26,7 +26,7 @@ export class Converter {
     private destUnitName: string,
   ) {}
 
-  public convertToBase() {
+  private convertToBase() {
     const multiplier: number = this.multipliers.filter(item => item.unitName === this.sourceUnitName)[0].value;
     return this.source * multiplier;
   }
