@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.info('Hello world!');
+import { Converter } from './convert-source-to-base';
+
+const converter = new Converter(100, 'cm', 'inch');
+
+console.info(converter.convert());
