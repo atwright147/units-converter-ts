@@ -1,3 +1,4 @@
+import { describe, it, beforeEach } from 'mocha';  // weird, needed for running through vscode debugger
 import { expect } from 'chai';
 import { Converter } from './converter';
 
