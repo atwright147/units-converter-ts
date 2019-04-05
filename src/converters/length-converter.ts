@@ -1,7 +1,12 @@
 import { IMultiplier } from '../interfaces/multipliers.interface';
 
 export class LengthConverter {
+  decimalPrecision = 2;
   multipliers: IMultiplier[] = [
+    {
+      unitName: 'mm',
+      value: 1
+    },
     {
       unitName: 'cm',
       value: 10
@@ -35,10 +40,10 @@ export class LengthConverter {
     const base = this.convertToBase();
 
     if (this.destUnitName === 'mm') {
-      return base;
+      return base.toFixed(this.decimalPrecision) as string;
     }
 
     const multiplier: number = this.multipliers.filter(item => item.unitName === this.destUnitName)[0].value;
-    return base / multiplier;
+    return (base / multiplier).toFixed(this.decimalPrecision) as string;
   }
 }
