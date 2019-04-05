@@ -1,6 +1,7 @@
-import { describe, it, beforeEach } from 'mocha';  // weird, needed for running through vscode debugger
+import { beforeEach, describe, it } from 'mocha';  // weird, needed for running through vscode debugger
 import { expect } from 'chai';
-import { Converter } from './converter';
+
+import { LengthConverter } from './length-converter';
 
 describe('Converter', () => {
   let convertInstance;

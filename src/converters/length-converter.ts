@@ -1,6 +1,6 @@
-import { IMultiplier } from './interfaces/multipliers.interface';
+import { IMultiplier } from '../interfaces/multipliers.interface';
 
-export class Converter {
+export class LengthConverter {
   multipliers: IMultiplier[] = [
     {
       unitName: 'cm',
