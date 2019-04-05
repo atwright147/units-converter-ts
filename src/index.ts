@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { Converter } from './converters/length-converter';
+import { LengthConverter } from './converters/length-converter';
 
-const converter = new Converter(100, 'cm', 'inch');
+const converter = new LengthConverter(100, 'cm', 'inch');
 
 console.info(converter.convert());

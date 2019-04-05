@@ -3,8 +3,8 @@ import { expect } from 'chai';
 
 import { LengthConverter } from './length-converter';
 
-describe('Converter', () => {
   let convertInstance;
+describe('LengthConverter', () => {
 
   beforeEach(() => {
     convertInstance = new Converter(10, 'cm', 'meter');
